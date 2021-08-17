@@ -10,46 +10,45 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- IMPORTA MATERIALIZE CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+
+    <!--Header-->
       <header>
           <!--menu menu-mobile-->
         <ul class="side-nav" id="menu-mobile">
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre a Boa Forma</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Unidades</a></li>
-            <li><a href="">Contatos</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Sobre">Sobre a Boa Forma</a></li>
+            <li><a href="#Sevicos">Serviços</a></li>
+            <li><a href="Unidades">Unidades</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
 
         <div class="navbar-fixed">
             <nav class="navbar z-depth-0">
-                <div class="nav-wrapper container">
+                <div class="nav-wrapper container ">
                     <h1 class="logo_text">Centro Boa Forma - Seu espaço de saúde 
                     </h1>
                     <a href=""><img class="logo_img" src="img/logo.png" alt="
                     Centro Boa Forma"></a>
                     
                     <ul class="right light hide-on-med-and-down">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre a Boa Forma</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Unidades</a></li>
-                        <li><a href="">Contatos</a></li>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Sobre">Sobre a Boa Forma</a></li>
+                        <li><a href="#Sevicos">Serviços</a></li>
+                        <li><a href="Unidades">Unidades</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
-
-                   
-
-                    <a href="#"  data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu  
+                 
+                    <a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu  
                     </i></a>
                 </div>
             </nav>
         </div>
       </header>
-
-      <section class="home bloco">
+      <!--Home-->
+      <section class="home bloco scrollspy" id="Home">
           <div class="row container banner">
               <div class="col s12 center">
                     <h2 class="white-text light"> O melhor treinamento funcional da região</h2>
@@ -64,19 +63,91 @@
           </div>
       </section>
 
+      <!-- Sobre-->
+      <section class="sobre bloco scrollspy" id="Sobre">
+          <div class="row container">
+              <div class="col s12 center">
+                 <h2 class="light">Sobre nós</h2>
+              </div>
+              
+              <div class="col s12 l6">
+                  <p class="ligth"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Ullam officiis aliquam veniam explicabo corporis in eligendi neque hic 
+                       architecto nisi perspiciatis reiciendis ad obcaecati porro error maxime,
+                       libero corrupti esse!</p>
+              </div>
 
+              <div class="col s12 l6">
+                  <div class="carousel carousel-slider" data-indicators="true">
+                        <a href="#" class="carousel-item">
+                            <img alt="Imagem institucional" src="img/banner-01.jpg">
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <img alt="Imagem institucional" src="img/banner-02.jpg">
+                        </a>
+                        <a href="#" class="carousel-item">
+                            <img alt="Imagem institucional" src="img/banner-03.jpg">
+                        </a>
+                  </div>
+              </div>
+          </div>
+          <div class="row blue-logo missao-visao-valores">
+              <div class="container">
+                  <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">directions_run</i></span>
+                    <h3 class="ligth">Missão</h3>
+                    <p class="ligth">Promover a saúde e bem-estar dos clientes,prevenção, promoção
+                        e reabilitação, através de tratamento humanizado em Fioterapia e suas vertentes.</p> 
+                  </article>
+
+                  <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">visibility</i></span>
+                    <h3 class="ligth">Visão</h3>
+                    <p class="ligth">- Tornar-se referência no cenario estadual buscando a excelência
+                        dos serviços prestados, além de promover o desenvolvimento técnico-científico
+                        de sua equipe e da sociedade.</p>   
+                  </article>
+
+                  <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">grade</i></span>
+                    <h3 class="ligth">Valores</h3>
+                    <p class="ligth">
+                        - Agir com ética frente ao clientes e colaboradores.<br>
+                        - Tornar o ambiente de trabalho o mais familiar possível<br>
+                        - Priorizar a qualidade e excelência do atendimento, valorizando e
+                          qualificando a equipe.<br>
+                    </p>   
+                  </article>
+              </div>
+          </div>
+      </section>
 
     <!--jQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!--MATERIALIZE JS-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <!--Javascript-->
+    <!--Inicialização - Javascript-->
     <script>
         $(document).ready(function(){
             //MENU MOBILE
             $(".button-collapse").sideNav();
+            //LINK INTERNO
+            $(".scrollspy").scrollSpy({
+                scrollOffset: 0
+            }); 
+          //CARROUSEL
+          $(".carousel.carousel-slider").carousel({fullWidth:true});   
+        });
+
+        // ADICIONANDO NAVCOLOR
+        $(window).on("scroll",function(){
+            if($(window).scrollTop() > 100) {
+                $(".navbar").addClass("nav-color");
+            } else{
+                $(".navbar").removeClass("nav-color");
+            }
         });
     </script>
     
