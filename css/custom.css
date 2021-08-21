@@ -36,6 +36,13 @@ background-size: cover;}
 .sobre .missao-visao-valores h3 {font-size: 1.5rem; color:#fff; text-transform: uppercase;} 
 .sobre .missao-visao-valores p {color: #fff;text-align:center ;}
 
+/* SERVIÇOS*/
+.servicos {background-image: url('../img/textura2.png');}
+.servicos h2 {font-size: 2rem; color:#fff; text-transform: uppercase;}
+.servicos h2::after{content: '';display: block;width: 100px;border-top: 1px solid #2dc7d0;margin: 15px auto;}
+.servicos p {color:#fff; line-height: 1.8 rem;}
+.servicos .btn-horario {padding-bottom: 20px;}
+
 
 /*CUSTOM nav- customiza os tamanhos da nav- barra de navegacao*/
 nav {
@@ -50,7 +57,6 @@ nav {
     min-height: 90px;
     height: auto;
   }
-
 
   .navbar-fixed {
     position: absolute;
@@ -69,6 +75,7 @@ nav i.material-icons {
 
 .side-nav {background: url('../img/textura2.png');}
 .side-nav li>a {color: #fff;}
+.row {margin-bottom: 0;}
   
 
 /*MEDIA - responsividade para tela de diferentes aparelhos*/
