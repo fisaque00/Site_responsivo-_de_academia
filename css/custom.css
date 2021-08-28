@@ -43,6 +43,12 @@ background-size: cover;}
 .servicos p {color:#fff; line-height: 1.8 rem;}
 .servicos .btn-horario {padding-bottom: 20px;}
 
+/* UNIDADES */
+.unidades {background-image: url('../img/bg-unidades.jpg'); background-repeat: no-repeat;
+background-size: cover; background-attachment: fixed;}
+.unidades h2 {font-size: 2rem; color:#fff; text-transform: uppercase;}
+.unidades h2::after{content: '';display: block;width: 100px;border-top: 1px solid #2dc7d0;margin: 15px auto;}
+.unidades p {color:#fff; line-height: 1.8 rem;}
 
 /*CUSTOM nav- customiza os tamanhos da nav- barra de navegacao*/
 nav {
@@ -76,7 +82,11 @@ nav i.material-icons {
 .side-nav {background: url('../img/textura2.png');}
 .side-nav li>a {color: #fff;}
 .row {margin-bottom: 0;}
-  
+
+.tabs {background-color:#222 ;}
+.tabs .tab a{color: #fff;}
+.tabs .tab a:hover, .tabs .tab a:active{color: #2dc7d0;}
+.tabs .indicator {background-color: #2dc7d0;}
 
 /*MEDIA - responsividade para tela de diferentes aparelhos*/
 
